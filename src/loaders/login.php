@@ -13,6 +13,6 @@
     //    $_SESSION["message"] = $message;
     //}
     $title = 'login';
-    $content = './_login.php';
-    include('./layout.php');
+    $content = '../views/login.php';
+    include('../layouts/layout-main.php');
 ?>

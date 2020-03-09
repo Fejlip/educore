@@ -1,4 +1,4 @@
-<form action="/librus/register-handler.php" method="post">
+<form action="/educore/register-handler.php" method="post">
         Login<br>
         <input type="text" name="login" id=""><br>
         Email<br>

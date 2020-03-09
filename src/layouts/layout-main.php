@@ -1,14 +1,12 @@
 <?php    
+    error_reporting(-1);
     $school_name = '';
     $street_name = '';
     $street_nr = '';
     $zip_code = '';
     $city_name = '';
     $nip = NULL;
-    $mysqli = new mysqli('127.0.0.1', 'root', '', 'librus');
-    $query = "SET NAMES UTF8";
-    $stmt = $mysqli->prepare($query);
-    $stmt->execute();
+    $mysqli = new mysqli('localhost', 'root', '', 'librus');
     $query = "SELECT * FROM metadata";
     $stmt = $mysqli->prepare($query);
     $stmt->execute();
@@ -32,38 +30,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600|Poppins:300,400,400i,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>Educore - <?php echo $title ?></title>
 </head>
-<style>
-    * {
-        font-family: 'Open Sans', sans-serif;
-    }
 
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-    }
-
-    #logo {
-        display: inline-block;
-    }
-
-    #user-icon {
-        display: inline-block;
-        margin-right: 0.5rem;
-
-    }
-
-    a, a:hover {
-        text-decoration: none;
-    }
-</style>
 <body>
 <section id="header" class="row middle-xs between-xs">
 <h1 id="logo" class="col-xs-3">Lorem</h1>
 <div id="user-icon">
-<a href="/librus/login.php">Login</a>
-<a href="/librus/register.php">Register</a>
+<a href="/educore/login.php">Login</a>
 <!--
 <img src="./user.png" alt="" width="50">
 -->

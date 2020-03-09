@@ -19,6 +19,6 @@
         $stmt->bind_param('sssss', $email, $login, $name, $surname, $password);
         $stmt->execute();
 
-        header('Location: login.php');
+        header('Location: ../loaders/login.php');
     }
 ?>

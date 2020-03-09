@@ -16,10 +16,10 @@
         if (isset($_SESSION['login'])) {
         echo "Witaj ".$_SESSION['login']."!";
         } else {
-            header('Location: /librus/login.php');
+            header('Location: ./login.php');
         }
     ?>
     <br>  
-    <a href="logout.php">Logout</a>
+    <a href="../handlers/logout.php">Logout</a>
 </body>
 </html>

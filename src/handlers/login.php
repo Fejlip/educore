@@ -20,8 +20,11 @@
                 session_start();
                 $_SESSION["logged"] = true;
                 $_SESSION['login'] = $login;
-                header('Location: /librus/test.php');
+                header('Location: ../loaders/main.php');
                 break;
+            }
+            else {
+                header('Location: ../loaders/login.php');
             }   
         }
             session_start();
