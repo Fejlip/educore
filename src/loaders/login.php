@@ -12,7 +12,7 @@
     //    $message = '';
     //    $_SESSION["message"] = $message;
     //}
-    $title = 'login';
+    $title = 'Login';
     $content = '../views/login.php';
-    include('../layouts/layout-main.php');
+    include('../layouts/layout-public.php');
 ?>

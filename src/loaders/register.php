@@ -1,5 +1,5 @@
 <?php
-    $title = 'register';
+    $title = 'Register';
     $content = '../views/register.php';
-    include('../layouts/layout-main.php');
+    include('../layouts/layout-public.php');
 ?>

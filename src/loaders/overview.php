@@ -1,6 +1,5 @@
 <?php
-
-    $title = 'main';
+    $title = 'Overview';
     $content = '../views/overview.php';
-    include('../layouts/layout-main.php');
+    include('../layouts/layout-private.php');
 ?>

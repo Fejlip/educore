@@ -17,33 +17,39 @@ h1 {
 
 h1,
 h2,
-h3,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    margin: 1rem 0;
+}
+
 h4,
 h5,
 h6 {
     font-family: 'Poppins', sans-serif;
-    margin: 1.5rem 0;
+    margin: 0.5rem 0; 
 }
 
-#side_panel {
-
+#side_panel {   
     text-align: center;
-    background-color: rgb(40, 80, 173);
+    background-color: #2850ad;
     height: 100vh;
     border-right: 1px solid rgb(25, 58, 136);
+    color: white;
+}
+
+#side_panel-userinfo {
+    font-size: 1.2rem;
 }
 
 #side_panel-nav {
     list-style: none;
     text-align: left;
     padding: 0 0 0.5rem 0;
-    color: white;
-    background-color: rgb(40, 80, 173);
+
 }
 
 .side_panel-nav--li {
     font-size: 1.5rem;
-
     padding: 1rem 0;
     padding-left: 0.5rem;
     transition: border-left 0.2s ease-in;
@@ -51,16 +57,15 @@ h6 {
 
 .active {
     border-left: 5px solid white;
+    font-weight: 600;
 }
-
-.side_panel-nav--li:not(:last-child) {}
 
 .side_panel-nav--li:hover {
     border-left: 5px solid white;
 }
 
 .line {
-    border-bottom: 1px solid rgb(25, 58, 136);
+    border-bottom: 2px solid rgb(25, 58, 136);
     margin: 0 1rem;
     margin-bottom: 1.5rem;
     height: 1px;
@@ -84,7 +89,7 @@ h6 {
 
 a,
 a:hover {
-    color: white    ;
+    color: white;
     text-decoration: none;
 }
 
@@ -92,7 +97,12 @@ a:hover {
     background-color: white;
     font-weight: 600;
     padding: 0.5rem 1rem;
-    border: 1px solid rgb(25, 58, 136);
+    border: 2px solid rgb(25, 58, 136);
     color: rgb(40, 80, 173);
     border-radius: 0px;
+    transition: border 0.2s ease-in-out;
+}
+
+#side_panel-logout:hover {
+    border: 3px solid white;
 }

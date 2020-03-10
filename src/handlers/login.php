@@ -14,21 +14,21 @@
         $stmt->bind_param('s', $login,);
         $stmt->execute();
         $res = $stmt->get_result();
-        while ($row = $res->fetch_array()) {
-            if (password_verify($password, $row['password'])) {
-                echo "Zalogowano!";
-                session_start();
-                $_SESSION["logged"] = true;
-                $_SESSION['login'] = $login;
-                header('Location: ../loaders/overview.php');
-                break;
-            }
-            else {
-                header('Location: ../loaders/login.php');
-            }   
-        }
+        $row = $res->fetch_array();
+        if (password_verify($password, $row['password'])) {
+            echo "jd";
             session_start();
+            $_SESSION['email'] = $row['email'];
+            $_SESSION['name'] = $row['name'];
+            $_SESSION['surname'] = $row['surname'];
+            $_SESSION["logged"] = true;
+            $_SESSION['login'] = $login;
+            header('Location: ../loaders/overview.php');
+        }
+        else {
+            header('Location: ../loaders/login.php');
+        }   
+        
     }
-
 
 ?>

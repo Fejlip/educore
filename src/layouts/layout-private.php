@@ -20,6 +20,11 @@
         $city_name = $row['city_name'];
         $nip= $row['nip'];
     }
+
+    session_start();
+    $name = $_SESSION['name'];
+    $surname = $_SESSION['surname'];
+    $email = $_SESSION['email'];
 ?>
 
 <!DOCTYPE html>
@@ -41,15 +46,32 @@
 
 <body class="row">
     <div id="side_panel" class="col-xs-3">
+
         <h1>EDUCORE</h1>
+        <h4 id="side_panel-userinfo" class="col-xs-12"><?php echo $name." ".$surname; ?></h4>
+        <div class="line"></div>
         <ul id="side_panel-nav">
-            <li class="<?= ($activePage == 'overview') ? 'active':''; ?> side_panel-nav--li"><a href="">Overview</a></li>
-            <li class="side_panel-nav--li"><a href="">Agenda</a></li>
-            <li class="side_panel-nav--li"><a href="">Grades</a></li>
-            <li class="side_panel-nav--li"><a href="">Timetable</a></li>
-            <li class="side_panel-nav--li"><a href="">Messages</a></li>
-            <li class="side_panel-nav--li"><a href="">Attendance</a></li>
-            <li class="side_panel-nav--li"><a href="">Homework</a></li>
+            <a href="../loaders/overview.php">
+                <li class="<?= ($activePage == 'overview') ? 'active':''; ?> side_panel-nav--li">Overview</li>
+            </a>
+            <a href="../loaders/agenda.php">
+                <li class="<?= ($activePage == 'agenda') ? 'active':''; ?> side_panel-nav--li">Agenda</li>
+            </a>
+            <a href="../loaders/grades.php">
+                <li class="<?= ($activePage == 'grades') ? 'active':''; ?> side_panel-nav--li">Grades</li>
+            </a>
+            <a href="../loaders/timetable.php">
+                <li class="<?= ($activePage == 'timetable') ? 'active':''; ?> side_panel-nav--li">Timetable</li>
+            </a>
+            <a href="../loaders/messages.php">
+                <li class="<?= ($activePage == 'messages') ? 'active':''; ?> side_panel-nav--li">Messages</li>
+            </a>
+            <a href="../loaders/attendance.php">
+                <li class="<?= ($activePage == 'attendance') ? 'active':''; ?> side_panel-nav--li">Attendance</li>
+            </a>
+            <a href="../loaders/homework.php">
+                <li class="<?= ($activePage == 'homework') ? 'active':''; ?> side_panel-nav--li">Homework</li>
+            </a>
         </ul>
         <div class="line"></div>
         <a id="side_panel-logout" href="../handlers/logout.php">LOGOUT</a>
@@ -65,6 +87,7 @@
             <li>NIP - <?php echo $nip ?></li>
         </ul>
     </section>
+
 </body>
 
 </html>
