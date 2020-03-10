@@ -20,7 +20,7 @@
                 session_start();
                 $_SESSION["logged"] = true;
                 $_SESSION['login'] = $login;
-                header('Location: ../loaders/main.php');
+                header('Location: ../loaders/overview.php');
                 break;
             }
             else {

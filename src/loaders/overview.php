@@ -1,6 +1,6 @@
 <?php
 
     $title = 'main';
-    $content = '../views/main.php';
+    $content = '../views/overview.php';
     include('../layouts/layout-main.php');
 ?>

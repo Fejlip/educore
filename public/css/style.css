@@ -2,6 +2,19 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.row {
+    margin: 0;
+}
+
+.col-xs-3 {
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+}
+
 h1,
 h2,
 h3,
@@ -9,19 +22,77 @@ h4,
 h5,
 h6 {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin: 1.5rem 0;
 }
 
-#logo {
-    display: inline-block;
+#side_panel {
+
+    text-align: center;
+    background-color: rgb(40, 80, 173);
+    height: 100vh;
+    border-right: 1px solid rgb(25, 58, 136);
 }
 
-#user-icon {
-    display: inline-block;
-    margin-right: 0.5rem;
+#side_panel-nav {
+    list-style: none;
+    text-align: left;
+    padding: 0 0 0.5rem 0;
+    color: white;
+    background-color: rgb(40, 80, 173);
+}
+
+.side_panel-nav--li {
+    font-size: 1.5rem;
+
+    padding: 1rem 0;
+    padding-left: 0.5rem;
+    transition: border-left 0.2s ease-in;
+}
+
+.active {
+    border-left: 5px solid white;
+}
+
+.side_panel-nav--li:not(:last-child) {}
+
+.side_panel-nav--li:hover {
+    border-left: 5px solid white;
+}
+
+.line {
+    border-bottom: 1px solid rgb(25, 58, 136);
+    margin: 0 1rem;
+    margin-bottom: 1.5rem;
+    height: 1px;
+}
+
+#side_panel-links {
+    list-style: none;
+    text-align: left;
+    margin: 0 0.5rem;
+    padding: 0 0 0.5rem 0;
+    border-bottom: 1px solid rgb(32, 32, 32);
+}
+
+.side_panel-links--li {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem 0;
+    padding-left: 0.5rem;
+    transition: border-left 0.2s ease-in;
 }
 
 a,
 a:hover {
+    color: white    ;
     text-decoration: none;
+}
+
+#side_panel-logout {
+    background-color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(25, 58, 136);
+    color: rgb(40, 80, 173);
+    border-radius: 0px;
 }
