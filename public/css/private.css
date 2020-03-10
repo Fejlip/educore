@@ -1,0 +1,71 @@
+#side_panel {   
+    text-align: center;
+    background-color: #2850ad;
+    height: 100vh;
+    border-right: 1px solid rgb(25, 58, 136);
+    color: white;
+}
+
+#side_panel-userinfo {
+    font-size: 1.2rem;
+}
+
+#side_panel-nav {
+    list-style: none;
+    text-align: left;
+    padding: 0 0 0.5rem 0;
+
+}
+
+.side_panel-nav--li {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    padding-left: 0.5rem;
+    transition: border-left 0.2s ease-in;
+}
+
+.active {
+    border-left: 5px solid white;
+    font-weight: 600;
+}
+
+.side_panel-nav--li:hover {
+    border-left: 5px solid white;
+}
+
+.line {
+    border-bottom: 2px solid rgb(25, 58, 136);
+    margin: 0 1rem;
+    margin-bottom: 1.5rem;
+    height: 1px;
+}
+
+#side_panel-links {
+    list-style: none;
+    text-align: left;
+    margin: 0 0.5rem;
+    padding: 0 0 0.5rem 0;
+    border-bottom: 1px solid rgb(32, 32, 32);
+}
+
+.side_panel-links--li {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem 0;
+    padding-left: 0.5rem;
+    transition: border-left 0.2s ease-in;
+}
+
+#side_panel-logout {
+    background-color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(25, 58, 136);
+    color: rgb(40, 80, 173);
+    border-radius: 0px;
+    transition: border 0.2s ease-in-out;
+}
+
+#side_panel-logout:hover {
+    border: 3px solid white;
+}

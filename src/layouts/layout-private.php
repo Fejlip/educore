@@ -41,14 +41,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
         type="text/css">
     <link rel="stylesheet" href="/public/css/style.css">
-    <title>Educore - <?php echo $title ?></title>
+    <link rel="stylesheet" href="/public/css/private.css">
+    <title>Educore - <?php echo $title; ?></title>
 </head>
 
 <body class="row">
     <div id="side_panel" class="col-xs-3">
-
         <h1>EDUCORE</h1>
-        <h4 id="side_panel-userinfo" class="col-xs-12"><?php echo $name." ".$surname; ?></h4>
+        <h4 id="side_panel-userinfo" class="col-xs-12">Logged as <?php echo $name." ".$surname; ?></h4>
         <div class="line"></div>
         <ul id="side_panel-nav">
             <a href="../loaders/overview.php">
@@ -76,9 +76,17 @@
         <div class="line"></div>
         <a id="side_panel-logout" href="../handlers/logout.php">LOGOUT</a>
     </div>
+    <div class="col-xs-9">
+        <div class="row">
+            <h2 id="page_title" class="col-xs-12"><?php echo $title; ?></h2>
+            <div class="col-xs">
+                <?php include($content); ?>
+            </div>
+        </div>
+    </div>
 
-    <?php include($content); ?>
-    <section id="school_info">
+
+    <!--<section id="school_info">
         <h3>Dane placówki</h3>
         <ul>
             <li>Nazwa szkoły - <?php echo $school_name ?></li>
@@ -87,7 +95,7 @@
             <li>NIP - <?php echo $nip ?></li>
         </ul>
     </section>
-
+-->
 </body>
 
 </html>
