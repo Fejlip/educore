@@ -1,30 +1,6 @@
 <?php    
     error_reporting(-1);
-    $activePage = basename($_SERVER['PHP_SELF'], ".php");
-    $school_name = '';
-    $street_name = '';
-    $street_nr = '';
-    $zip_code = '';
-    $city_name = '';
-    $nip = NULL;
-    $mysqli = new mysqli('localhost', 'root', '', 'librus');
-    $query = "SELECT * FROM metadata";
-    $stmt = $mysqli->prepare($query);
-    $stmt->execute();
-    $res = $stmt->get_result();
-    while ($row = $res->fetch_array()) {
-        $school_name = $row['school_name'];
-        $street_name = $row['street_name'];
-        $street_nr = $row['street_nr'];
-        $zip_code = $row['zip_code'];
-        $city_name = $row['city_name'];
-        $nip= $row['nip'];
-    }
 
-    session_start();
-    $name = $_SESSION['name'];
-    $surname = $_SESSION['surname'];
-    $email = $_SESSION['email'];
 ?>
 
 <!DOCTYPE html>

@@ -1,5 +1,5 @@
 <form action="../handlers/login.php" method="post">
-        <?php //echo $_SESSION["message"]; ?>
+        <?php echo $message; ?>
         Login<br>
         <input type="text" name="login" id=""><br>
         Password<br>
