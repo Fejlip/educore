@@ -10,10 +10,6 @@
     padding: 0;
 }
 
-h1 {
-    font-size: 3.75rem;
-    color: white;
-}
 
 h1,
 h2,
@@ -29,6 +25,8 @@ h6 {
     margin: 0.5rem 0; 
 }
 
+
+
 #page_title {
 
     padding-left: 1rem;
@@ -38,6 +36,25 @@ h6 {
 
 a,
 a:hover {
-    color: white;
     text-decoration: none;
+}
+
+.users-row {
+    padding: 0.25rem 0;
+}
+
+.users-edit {
+    background-color: orange;
+    padding: 0 0.3rem;
+    margin: 0 0.2rem;
+    border-radius: 1px;
+    border: 1px solid darkorange;
+}
+
+.users-remove {
+    padding: 0 0.3rem;
+    margin: 0 0.2rem;
+    border-radius: 1px;
+    background-color: red;
+    border: 1px solid darkred;
 }

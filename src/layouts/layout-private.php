@@ -40,6 +40,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
         type="text/css">
+        <link rel="shortcut icon" href="../../public/img/fav2.png" type="image/x-icon">
     <link rel="stylesheet" href="../../public/css/style.css">
     <link rel="stylesheet" href="../../public/css/private.css">
     <title>Educore - <?php echo $title; ?></title>
@@ -47,7 +48,7 @@
 
 <body class="row">
     <div id="side_panel" class="col-xs-3">
-        <h1>EDUCORE</h1>
+        <img src="../../public/img/logo.png" alt="Educore logo." id="site-logo" class="col-xs-10">
         <h4 id="side_panel-userinfo" class="col-xs-12">Logged as <?php echo $name." ".$surname; ?></h4>
         <div class="line"></div>
         <ul id="side_panel-nav">
