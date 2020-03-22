@@ -29,6 +29,7 @@
     transition: border-left 0.2s ease-in;
     color: white;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .active {
@@ -70,9 +71,9 @@
     border: 2px solid rgb(25, 58, 136);
     color: rgb(40, 80, 173);
     border-radius: 0px;
-    transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in;
 }
 
 #side_panel-logout:hover {
-    border: 3px solid white;
+    border: 2px solid white;
 }

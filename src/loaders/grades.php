@@ -1,5 +1,5 @@
 <?php
     $title = 'Grades';
-    $content = '../views/grades.php';
-    include('../layouts/layout-private.php');
+    $content = '/../views/grades.php';
+    require __DIR__ . '/../layouts/layout-private.php';
 ?>

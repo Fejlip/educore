@@ -1,5 +1,5 @@
 <?php
     $title = 'Messages';
-    $content = '../views/messages.php';
-    include('../layouts/layout-private.php');
+    $content = '/../views/messages.php';
+    require __DIR__ . '/../layouts/layout-private.php';
 ?>

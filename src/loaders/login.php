@@ -6,6 +6,7 @@
         unset($_SESSION['message']);
     }
     $title = 'Login';
-    $content = '../views/login.php';
-    include('../layouts/layout-public.php');
+    $content = '/../views/login.php';
+    require __DIR__ . '/../layouts/layout-public.php';
+    
 ?>

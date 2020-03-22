@@ -1,5 +1,5 @@
 <?php
     $title = 'Timetable';
-    $content = '../views/timetable.php';
-    include('../layouts/layout-private.php');
+    $content = '/../views/timetable.php';
+    require __DIR__ . '/../layouts/layout-private.php';
 ?>

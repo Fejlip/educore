@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
         type="text/css">
+        <script src="https://kit.fontawesome.com/839fad7795.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../../public/css/style.css">
     <link rel="stylesheet" href="../../../public/css/private.css">
     <title>Educore - <?php echo $title; ?></title>

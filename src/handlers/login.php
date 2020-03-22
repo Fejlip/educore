@@ -17,12 +17,12 @@
             $_SESSION['surname'] = $row['surname'];
             $_SESSION["logged"] = true;
             $_SESSION['login'] = $login;
-            header('Location: ../loaders/overview.php');
+            header('Location: /overview');
         }
         else {
             session_start();
             $_SESSION['message'] = '<small>Invalid login or password</small><br>';
-            header('Location: ../loaders/login.php');
+            header('Location: /');
         }   
         
     }

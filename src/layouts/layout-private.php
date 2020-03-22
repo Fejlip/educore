@@ -34,12 +34,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600|Poppins:300,400,400i,600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?Poppins:300,400,400i,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="shortcut icon" href="../../public/img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../../public/img/fav.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/839fad7795.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../public/css/style.css">
     <link rel="stylesheet" href="../../public/css/private.css">
     <title>Educore - <?php echo $title; ?></title>
@@ -52,36 +52,36 @@
         <h4 id="side_panel-userinfo" class="col-12">Logged as <?php echo $name." ".$surname; ?></h4>
         <div class="line"></div>
         <ul id="side_panel-nav">
-            <a href="../loaders/overview.php">
+            <a href="/overview">
                 <li class="<?= ($activePage == 'overview') ? 'active':''; ?> side_panel-nav--li">Overview</li>
             </a>
-            <a href="../loaders/agenda.php">
+            <a href="/agenda">
                 <li class="<?= ($activePage == 'agenda') ? 'active':''; ?> side_panel-nav--li">Agenda</li>
             </a>
-            <a href="../loaders/grades.php">
+            <a href="/grades">
                 <li class="<?= ($activePage == 'grades') ? 'active':''; ?> side_panel-nav--li">Grades</li>
             </a>
-            <a href="../loaders/timetable.php">
+            <a href="/timetable">
                 <li class="<?= ($activePage == 'timetable') ? 'active':''; ?> side_panel-nav--li">Timetable</li>
             </a>
-            <a href="../loaders/messages.php">
+            <a href="/messages">
                 <li class="<?= ($activePage == 'messages') ? 'active':''; ?> side_panel-nav--li">Messages</li>
             </a>
-            <a href="../loaders/attendance.php">
+            <a href="/attendance">
                 <li class="<?= ($activePage == 'attendance') ? 'active':''; ?> side_panel-nav--li">Attendance</li>
             </a>
-            <a href="../loaders/homework.php">
+            <a href="/homework">
                 <li class="<?= ($activePage == 'homework') ? 'active':''; ?> side_panel-nav--li">Homework</li>
             </a>
         </ul>
         <div class="line"></div>
-        <a id="side_panel-logout" href="../handlers/logout.php">LOGOUT</a>
+        <a id="side_panel-logout" href="/logout-handler">LOGOUT</a>
     </div>
     <div class="col-9">
         <div class="row">
             <h2 id="page_title" class="col-12"><?php echo $title; ?></h2>
             <div class="col">
-                <?php include($content); ?>
+                <?php require __DIR__ . $content ?>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </div>
