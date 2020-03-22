@@ -1,13 +1,14 @@
-#site-logo {
-    margin: 1rem 0;
-}
-
 #side_panel {   
     text-align: center;
     background-color: #2850ad;
     height: 100vh;
     border-right: 1px solid rgb(25, 58, 136);
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
 }
 
 #side_panel-userinfo {
