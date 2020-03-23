@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-[class*="col-"] {
+[class*="col"] {
     padding: 0;
 }
 
@@ -41,18 +41,17 @@ a:hover {
     padding: 0.25rem 0;
 }
 
-.users-edit {
-    background-color: orange;
-    padding: 0 0.3rem;
-    margin: 0 0.2rem;
-    border-radius: 1px;
-    border: 1px solid darkorange;
+
+.fa-cog {
+    color: darkorange;
+
 }
 
-.users-remove {
-    padding: 0 0.3rem;
-    margin: 0 0.2rem;
-    border-radius: 1px;
-    background-color: red;
-    border: 1px solid darkred;
+.fa-times {
+    color: red;
+}
+
+.fa-cog, .fa-times {
+    text-shadow: 2px 2px 2px rgba(40,40,40,0.5);
+    padding: 0 0.5rem;
 }
