@@ -82,7 +82,6 @@
             <h2 id="page_title" class="col-12"><?php echo $title; ?></h2>
             <div class="col">
                 <?php require __DIR__ . $content ?>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </div>
     </div>

@@ -27,8 +27,8 @@ switch ($request) {
     case '/overview' :
         require __DIR__ . '/src/loaders/overview.php';
         break;
-    case '/admin/' :
-        require __DIR__ . '/src/handlers/logout.php';
+    case '/admin/users' :
+        require __DIR__ . '/src/loaders/panel/users.php';
         break;   
     case '/login-handler' :
         require __DIR__ . '/src/handlers/login.php';
