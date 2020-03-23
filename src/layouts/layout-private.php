@@ -48,7 +48,7 @@
 <body class="row">
     <div class="col-3"></div>
     <div id="side_panel" class="col-3">
-        <img src="../../public/img/logo.png" alt="Educore logo." id="site-logo" class="col-11 mx-3">
+        <img src="../../public/img/logo.svg" alt="Educore logo." id="site-logo" class="col-11 mx-3">
         <h4 id="side_panel-userinfo" class="col-12">Logged as <?php echo $name." ".$surname; ?></h4>
         <div class="line"></div>
         <ul id="side_panel-nav">

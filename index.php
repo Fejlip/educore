@@ -3,6 +3,9 @@
 $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
+    case '/' :
+        require __DIR__ . '/src/loaders/login.php';
+        break;
     case '/agenda' :
         require __DIR__ . '/src/loaders/agenda.php';
         break;
@@ -12,7 +15,6 @@ switch ($request) {
     case '/grades' :
         require __DIR__ . '/src/loaders/grades.php';
         break;
-        
     case '/homework' :
         require __DIR__ . '/src/loaders/homework.php';
         break;
@@ -21,9 +23,6 @@ switch ($request) {
         break;
     case '/timetable' :
         require __DIR__ . '/src/loaders/timetable.php';
-        break;
-    case '/' :
-        require __DIR__ . '/src/loaders/login.php';
         break;
     case '/overview' :
         require __DIR__ . '/src/loaders/overview.php';
@@ -39,5 +38,4 @@ switch ($request) {
         require __DIR__ . './src/loaders/login.php';
         break;
 }
-
 ?>

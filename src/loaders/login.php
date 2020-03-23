@@ -5,6 +5,9 @@
         $message = $_SESSION['message'];
         unset($_SESSION['message']);
     }
+    else {
+        $message = '';
+    }
     $title = 'Login';
     $content = '/../views/login.php';
     require __DIR__ . '/../layouts/layout-public.php';
