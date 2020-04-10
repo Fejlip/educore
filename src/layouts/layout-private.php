@@ -53,25 +53,25 @@
         <div class="line"></div>
         <ul id="side_panel-nav">
             <a href="/overview">
-                <li class="<?= ($activePage == 'overview') ? 'active':''; ?> side_panel-nav--li">Overview</li>
+                <li class="<?= ($title == 'Overview') ? 'active':''; ?> side_panel-nav--li">Overview</li>
             </a>
             <a href="/agenda">
-                <li class="<?= ($activePage == 'agenda') ? 'active':''; ?> side_panel-nav--li">Agenda</li>
+                <li class="<?= ($title == 'Agenda') ? 'active':''; ?> side_panel-nav--li">Agenda</li>
             </a>
             <a href="/grades">
-                <li class="<?= ($activePage == 'grades') ? 'active':''; ?> side_panel-nav--li">Grades</li>
+                <li class="<?= ($title == 'Grades') ? 'active':''; ?> side_panel-nav--li">Grades</li>
             </a>
             <a href="/timetable">
-                <li class="<?= ($activePage == 'timetable') ? 'active':''; ?> side_panel-nav--li">Timetable</li>
+                <li class="<?= ($title == 'Timetable') ? 'active':''; ?> side_panel-nav--li">Timetable</li>
             </a>
             <a href="/messages">
-                <li class="<?= ($activePage == 'messages') ? 'active':''; ?> side_panel-nav--li">Messages</li>
+                <li class="<?= ($title == 'Messages') ? 'active':''; ?> side_panel-nav--li">Messages</li>
             </a>
             <a href="/attendance">
-                <li class="<?= ($activePage == 'attendance') ? 'active':''; ?> side_panel-nav--li">Attendance</li>
+                <li class="<?= ($title == 'Attendance') ? 'active':''; ?> side_panel-nav--li">Attendance</li>
             </a>
             <a href="/homework">
-                <li class="<?= ($activePage == 'homework') ? 'active':''; ?> side_panel-nav--li">Homework</li>
+                <li class="<?= ($title == 'Homework') ? 'active':''; ?> side_panel-nav--li">Homework</li>
             </a>
         </ul>
         <div class="line"></div>

@@ -4,6 +4,7 @@ $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
     case '/' :
+
         require __DIR__ . '/src/loaders/login.php';
         break;
     case '/agenda' :
@@ -25,6 +26,7 @@ switch ($request) {
         require __DIR__ . '/src/loaders/timetable.php';
         break;
     case '/overview' :
+        $page = 'siema';
         require __DIR__ . '/src/loaders/overview.php';
         break;
     case '/admin/users' :
